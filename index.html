@@ -4,140 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youssef Ahmed Hussein Mohamed - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            color: #333;
         }
         .container {
             max-width: 900px;
             margin: auto;
-            background: #fff;
+            background-color: white;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .header {
-            display: flex;
-            align-items: center;
+            text-align: center;
         }
-        .header img {
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-            color: #34495e;
+            margin: auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .section {
-            margin-bottom: 40px;
+            margin-top: 30px;
         }
-        .skills-icons i {
-            margin-right: 10px;
-            color: #2980b9;
+        .section h2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
-        .skills-list {
-            list-style: none;
+        .contact-info, .skills, .courses, .work-experience, .education, .languages {
+            padding-left: 20px;
+        }
+        .skills ul, .courses ul, .work-experience ul, .languages ul {
+            list-style-type: none;
             padding: 0;
         }
-        .skills-list li {
-            margin: 5px 0;
+        .skills ul li, .courses ul li, .work-experience ul li, .languages ul li {
+            margin-bottom: 10px;
+            position: relative;
         }
-        .contact-icons i {
+        .skills ul li::before, .courses ul li::before {
+            content: "•";
+            color: #4CAF50;
+            font-size: 20px;
             margin-right: 10px;
-            color: #e74c3c;
+            position: absolute;
+            left: -25px;
+            top: -2px;
+        }
+        .skills ul li {
+            padding-left: 25px;
+        }
+        .skills ul li i, .courses ul li i {
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://raw.githubusercontent.com/AhmedAmer74/AhmedAmer74/refs/heads/main/11.jpg" alt="Profile Picture">
-            <div>
-                <h1>Youssef Ahmed Hussein Mohamed</h1>
-                <p>An IT professional with expertise in channels project roles, hardware and software skills, and IT support.</p>
-            </div>
-        </div>
-
-        <div class="section contact-info">
-            <h2>Contact Information</h2>
-            <p><i class="fas fa-envelope contact-icons"></i>Email: Ya9260465@gmail.com</p>
-            <p><i class="fas fa-phone contact-icons"></i>Phone: +20 1554759154</p>
-            <p><i class="fas fa-map-marker-alt contact-icons"></i>Address: Obour City, Qalyubia</p>
-            <p><i class="fas fa-birthday-cake contact-icons"></i>Date of Birth: 15/07/1999</p>
+            <h1>Youssef Ahmed Hussein Mohamed</h1>
+            <img src="https://raw.githubusercontent.com/AhmedAmer74/AhmedAmer74/refs/heads/main/11.jpg" alt="Profile Picture" class="profile-pic">
         </div>
 
         <div class="section">
             <h2>Professional Summary</h2>
-            <p>
-                An IT professional with a background in channels project roles is sought. Expertise has been developed 
-                in utilizing advanced computer skills, including hardware, software, and Microsoft Office Suite. Proficiency 
-                has been demonstrated in IT support, video editing with Adobe Premiere Pro, database management, 
-                and word processing. Experience in educational television programs has been gained, along with strong 
-                analytical skills and the ability to work effectively with complex systems and tasks.
-            </p>
+            <p>An IT professional with a background in channels project roles is sought. Expertise has been developed in utilizing advanced computer skills, including hardware, software, and Microsoft Office Suite. Proficiency has been demonstrated in IT support, video editing with Adobe Premiere Pro, database management, and word processing. Experience in educational television programs has been gained, along with strong analytical skills and the ability to work effectively with complex systems and tasks.</p>
         </div>
 
         <div class="section">
             <h2>Education</h2>
-            <p><strong>Faculty of Commerce, Helwan University</strong></p>
-            <p>Graduation Year: 2021</p>
+            <p>Faculty of Commerce, Helwan University<br>Graduation Year: 2021</p>
         </div>
 
         <div class="section">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-laptop-code skills-icons"></i>Problem-solving</li>
-                <li><i class="fas fa-lightbulb skills-icons"></i>Analytical Thinking</li>
-                <li><i class="fas fa-clock skills-icons"></i>Time Management</li>
-                <li><i class="fas fa-sync-alt skills-icons"></i>Adaptability</li>
-                <li><i class="fas fa-comments skills-icons"></i>Communication Skills</li>
-                <li><i class="fas fa-search skills-icons"></i>Attention to Detail</li>
-                <li><i class="fas fa-tools skills-icons"></i>IT Support and Project Management</li>
-                <li><i class="fas fa-database skills-icons"></i>Database Management</li>
-            </ul>
+            <div class="skills">
+                <ul>
+                    <li><i class="fas fa-cogs"></i> Problem-solving</li>
+                    <li><i class="fas fa-lightbulb"></i> Analytical thinking</li>
+                    <li><i class="fas fa-clock"></i> Time management</li>
+                    <li><i class="fas fa-user"></i> Adaptability</li>
+                    <li><i class="fas fa-comments"></i> Communication skills</li>
+                    <li><i class="fas fa-check"></i> Attention to detail</li>
+                    <li><i class="fas fa-tools"></i> Proficient in IT support and project management</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section">
-            <h2>Work Experience</h2>
-            <p><strong>Majd TV</strong></p>
-            <ul>
-                <li>Supported technical troubleshooting.</li>
-                <li>Completed routine maintenance on video tape recorders.</li>
-                <li>Led team meetings for project updates.</li>
-                <li>Managed IT equipment inventory.</li>
-            </ul>
-            <p><strong>Madrasetna Educational Channel</strong></p>
-            <ul>
-                <li>Managed system troubleshooting for technical issues.</li>
-                <li>Led staff training on software usage.</li>
-                <li>Evaluated IT infrastructure for performance.</li>
-            </ul>
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:Ya9260465@gmail.com">Ya9260465@gmail.com</a></p>
+                <p>Phone: +20 1554759154</p>
+                <p>Address: Obour City, Qalyubia</p>
+                <p>Date of Birth: 15/7/1999</p>
+            </div>
         </div>
 
         <div class="section">
             <h2>Courses</h2>
-            <p>International Computer Driving License (ICDL), Microsoft Office, Adobe Premiere Pro</p>
+            <div class="courses">
+                <ul>
+                    <li><i class="fas fa-certificate"></i> International Computer Driving Licence (ICDL)</li>
+                    <li><i class="fas fa-windows"></i> Windows</li>
+                    <li><i class="fas fa-file-word"></i> Microsoft Word</li>
+                    <li><i class="fas fa-file-excel"></i> Excel</li>
+                    <li><i class="fas fa-file-powerpoint"></i> PowerPoint</li>
+                    <li><i class="fas fa-video"></i> Adobe Premiere Pro</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="work-experience">
+                <ul>
+                    <li>Worked on Majd TV - Technical troubleshooting and maintenance.</li>
+                    <li>Led team meetings for project updates and managed IT inventory.</li>
+                    <li>Identified technical issues and provided solutions.</li>
+                    <li>Worked IT at Madrasetna Educational Channel - Managed software updates, infrastructure evaluation, and user training.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section">
             <h2>Languages</h2>
-            <p>Arabic: Native</p>
-            <p>English: Good</p>
+            <div class="languages">
+                <ul>
+                    <li>Arabic: Native</li>
+                    <li>English: Good</li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <!-- Add FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
