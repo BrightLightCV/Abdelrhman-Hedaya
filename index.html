@@ -3,153 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Ahmed Hussein Mohamed - CV</title>
+    <title>CV - Youssef Ahmed Hussein Mohamed</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            color: #333;
         }
         .container {
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .header {
+        h1 {
             text-align: center;
+            color: #007bff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
         }
-        .header h1 {
+        h2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+        p, li {
             margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
         }
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: auto;
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             display: block;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
         }
-        .section {
-            margin-top: 30px;
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .section h2 {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .skills, .courses, .languages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skills div, .courses div, .languages div {
+            width: 48%;
             margin-bottom: 10px;
-            text-transform: uppercase;
         }
-        .contact-info, .skills, .courses, .work-experience, .education, .languages {
-            padding-left: 20px;
+        .icon {
+            margin-right: 8px;
         }
-        .skills ul, .courses ul, .work-experience ul, .languages ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills ul li, .courses ul li, .work-experience ul li, .languages ul li {
-            margin-bottom: 10px;
-            position: relative;
-        }
-        .skills ul li::before, .courses ul li::before {
-            content: "•";
-            color: #4CAF50;
-            font-size: 20px;
-            margin-right: 10px;
-            position: absolute;
-            left: -25px;
-            top: -2px;
-        }
-        .skills ul li {
-            padding-left: 25px;
-        }
-        .skills ul li i, .courses ul li i {
-            margin-right: 10px;
+        .shadow {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Youssef Ahmed Hussein Mohamed</h1>
-            <img src="https://raw.githubusercontent.com/AhmedAmer74/AhmedAmer74/refs/heads/main/11.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>YOUSSEF AHMED HUSSEIN MOHAMED</h1>
+        <div class="contact-info">
+            <img src="https://raw.githubusercontent.com/AhmedAmer74/AhmedAmer74/refs/heads/main/11.jpg" alt="Profile Picture" class="profile-pic shadow">
+            <p>Email: Ya9260465@gmail.com</p>
+            <p>Phone: +20 1554759154</p>
+            <p>Location: Obour City, Qalyubia</p>
+            <p>Date of Birth: 15/07/1999</p>
         </div>
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>An IT professional with a background in channels project roles is sought. Expertise has been developed in utilizing advanced computer skills, including hardware, software, and Microsoft Office Suite. Proficiency has been demonstrated in IT support, video editing with Adobe Premiere Pro, database management, and word processing. Experience in educational television programs has been gained, along with strong analytical skills and the ability to work effectively with complex systems and tasks.</p>
+        <h2>Professional Summary</h2>
+        <p>An IT professional with a background in channels project roles is sought. Expertise has been developed in utilizing advanced computer skills, including hardware, software, and Microsoft Office Suite. Proficiency has been demonstrated in IT support, video editing with Adobe Premiere Pro, database management, and word processing. Experience in educational television programs has been gained, along with strong analytical skills and the ability to work effectively with complex systems and tasks.</p>
+
+        <h2>EDUCATION</h2>
+        <p>Faculty of Commerce, Helwan University</p>
+        <p>Graduation Year: 2021</p>
+
+        <h2>WORK SKILLS</h2>
+        <ul>
+            <li>Problem-solving</li>
+            <li>Analytical thinking</li>
+            <li>Time management</li>
+            <li>Adaptability</li>
+            <li>Communication skills</li>
+            <li>Attention to detail</li>
+        </ul>
+
+        <h2>SKILLS</h2>
+        <div class="skills">
+            <div><span class="icon">🛠️</span>IT Support</div>
+            <div><span class="icon">🔍</span>Project Management</div>
+            <div><span class="icon">🖥️</span>Troubleshooting Hardware and Software</div>
+            <div><span class="icon">💾</span>Database Management</div>
+            <div><span class="icon">📞</span>Technical Support</div>
         </div>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p>Faculty of Commerce, Helwan University<br>Graduation Year: 2021</p>
+        <h2>COURSES</h2>
+        <div class="courses">
+            <div><span class="icon">🖥️</span>International Computer Driving Licence ICDL</div>
+            <div><span class="icon">📝</span>Microsoft Office Suite</div>
+            <div><span class="icon">🎬</span>Adobe Premiere Pro</div>
         </div>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <ul>
-                    <li><i class="fas fa-cogs"></i> Problem-solving</li>
-                    <li><i class="fas fa-lightbulb"></i> Analytical thinking</li>
-                    <li><i class="fas fa-clock"></i> Time management</li>
-                    <li><i class="fas fa-user"></i> Adaptability</li>
-                    <li><i class="fas fa-comments"></i> Communication skills</li>
-                    <li><i class="fas fa-check"></i> Attention to detail</li>
-                    <li><i class="fas fa-tools"></i> Proficient in IT support and project management</li>
-                </ul>
-            </div>
-        </div>
+        <h2>WORK EXPERIENCE</h2>
+        <ul>
+            <li>Worked at Majd TV</li>
+            <li>Supported technical troubleshooting</li>
+            <li>Completed routine maintenance on video tape recorders</li>
+            <li>Led team meetings for project updates</li>
+            <li>Managed inventory of IT equipment and supplies</li>
+            <li>Provided solutions to technical issues</li>
+        </ul>
 
-        <div class="section">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:Ya9260465@gmail.com">Ya9260465@gmail.com</a></p>
-                <p>Phone: +20 1554759154</p>
-                <p>Address: Obour City, Qalyubia</p>
-                <p>Date of Birth: 15/7/1999</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Courses</h2>
-            <div class="courses">
-                <ul>
-                    <li><i class="fas fa-certificate"></i> International Computer Driving Licence (ICDL)</li>
-                    <li><i class="fas fa-windows"></i> Windows</li>
-                    <li><i class="fas fa-file-word"></i> Microsoft Word</li>
-                    <li><i class="fas fa-file-excel"></i> Excel</li>
-                    <li><i class="fas fa-file-powerpoint"></i> PowerPoint</li>
-                    <li><i class="fas fa-video"></i> Adobe Premiere Pro</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Work Experience</h2>
-            <div class="work-experience">
-                <ul>
-                    <li>Worked on Majd TV - Technical troubleshooting and maintenance.</li>
-                    <li>Led team meetings for project updates and managed IT inventory.</li>
-                    <li>Identified technical issues and provided solutions.</li>
-                    <li>Worked IT at Madrasetna Educational Channel - Managed software updates, infrastructure evaluation, and user training.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Languages</h2>
-            <div class="languages">
-                <ul>
-                    <li>Arabic: Native</li>
-                    <li>English: Good</li>
-                </ul>
-            </div>
+        <h2>LANGUAGES</h2>
+        <div class="languages">
+            <div><span class="icon">🇸🇦</span>Arabic: Native</div>
+            <div><span class="icon">🇬🇧</span>English: Good</div>
         </div>
     </div>
-
-    <!-- Add FontAwesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
